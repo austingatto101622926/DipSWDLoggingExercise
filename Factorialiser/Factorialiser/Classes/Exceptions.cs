@@ -16,8 +16,8 @@ namespace Factorialiser.Classes
         // message for this exception is (if for example 1.23 is entered):
         // "NotIntegerExcpetion: 1.23"
 
-        public NotIntegerException(string input) : base()
-        { }
+        public NotIntegerException(string input) : base($"NotIntegerException: {input}")
+        {}
     }
 
     /// <summary>
@@ -30,7 +30,7 @@ namespace Factorialiser.Classes
         // message for this exception is:
 
         // "NullValueException: No Value Entered"
-        public NullValueException() : base()
+        public NullValueException() : base("NullValueException: No Value Entered")
         { }
     }
 
@@ -46,7 +46,7 @@ namespace Factorialiser.Classes
         // message for this exception is (if for example -6 is entered):
 
         // "NumberTooLowException: -6 "
-        public NumberTooLowException(int num) : base()
+        public NumberTooLowException(int num) : base($"NumberTooLowException: {num}")
         {}
     }
 
@@ -61,7 +61,7 @@ namespace Factorialiser.Classes
 
         // "NumberTooHighException: 36 "
 
-        public NumberTooHighException(int num) : base()
+        public NumberTooHighException(int num) : base($"NumberTooHighException: {num}")
         {}
    }
 

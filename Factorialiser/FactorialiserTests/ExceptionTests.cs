@@ -36,9 +36,9 @@ namespace FactorialiserTests
         }
 
         [Test]
-        [TestCase("1.23", "NotIntegerExcpetion: 1.23")]
-        [TestCase("bollocks", "NotIntegerExcpetion: bollocks")]
-        [TestCase("true", "NotIntegerExcpetion: true")]
+        [TestCase("1.23", "NotIntegerException: 1.23")]
+        [TestCase("bollocks", "NotIntegerException: bollocks")]
+        [TestCase("true", "NotIntegerException: true")]
         public void NotIntegerException_IsThrown_MessageCorrect(string input, string expectedResult)
         {
             // arrange
